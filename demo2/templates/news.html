@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{.title}}</title>
+</head>
+<body>
+    <h1>我是一个{{ .title }}</h1>
+
+    <!--定义与使用变量-->
+    {{ $t := .title }}
+    <h1>变量t为 {{ $t }}</h1>
+
+
+    <!--条件判断-->
+    {{if gt .score 60 }}
+        <p>及格</p>
+    {{ else }}
+        <p>不及格</p>
+    {{ end }}
+
+</body>
+</html>
